@@ -1,2 +1,2 @@
 # CSS-Learning-Track
-Keeping notes/resources/example of my learning on CSS
+Collections of notes/resources/examples for my learning on CSS
