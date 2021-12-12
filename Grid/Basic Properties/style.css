@@ -1,0 +1,58 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 90vh;
+}
+
+/* Example 1 */
+.grid{
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 10% 1fr 1fr;
+    gap: 10px;
+}
+.box{
+    background-color: rgb(61, 60, 60);
+    display: flex;
+    color: white;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Example 2 */
+.grid1{
+    display: grid;
+    height: 30%;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: 50px;
+}
+#item1 {
+    background-color: lime;
+}
+#item2 {
+    background-color: yellow;
+    /* Start from grid-line 2 and end at grid-line 4 */
+    grid-column: 2/4; 
+}
+#item3 {
+    background-color: blue;
+    /* Span this item to 2 area but make sure it end at 7. so it will start from grid-line 5 */
+    grid-column: span 2/7; 
+}
+
+/* Example 3 */
+.grid2{
+    display: grid;
+    height: 30%;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+}
+#item6{
+    grid-row: 1/3;
+    /* If we only specify the grid-row, it will span the whole row but it will position on start so we need to specify the grid-column also to make sure it stays where it belongs */
+    grid-column: 3/4; /* Original position last column */
+}
