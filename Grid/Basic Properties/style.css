@@ -23,7 +23,7 @@ body{
     align-items: center;
 }
 
-/* Example 2 */
+/* Example 2a */
 .grid1{
     display: grid;
     height: 30%;
@@ -44,7 +44,7 @@ body{
     grid-column: span 2/7; 
 }
 
-/* Example 3 */
+/* Example 2b */
 .grid2{
     display: grid;
     height: 30%;
@@ -55,4 +55,82 @@ body{
     grid-row: 1/3;
     /* If we only specify the grid-row, it will span the whole row but it will position on start so we need to specify the grid-column also to make sure it stays where it belongs */
     grid-column: 3/4; /* Original position last column */
+}
+
+
+/* Example 3a */
+.grid-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 2fr;
+    grid-template-rows: 1fr 5fr 2.5fr 2fr;
+    height: 100%;
+}
+main{
+    grid-column: 1/3;
+    grid-row: 1/3;
+    background: lightpink;
+}
+.nom{
+    grid-column: 1/2;
+    grid-row: 3/4;
+    background: lightcyan;
+}
+.yum{
+    grid-column: 2/3;
+    grid-row: 3/4;
+    background: lightgreen;
+}
+footer{
+    background: lightgray;
+    grid-column: 1/3;
+    grid-row: 4/5;
+}
+header{
+    background: lightblue;
+    grid-column: 3/4;
+    grid-row: 1/2;
+}
+.image-gallery{
+    background: lightcoral;
+    grid-column: 3/4;
+    grid-row: 2/5;
+}
+
+
+/* Example 3b */
+.grid-container-1{
+    display: grid;
+    grid-template-columns: 1fr 1fr 2fr;
+    grid-template-rows: 1fr 5fr 2.5fr 2fr;
+    grid-template-areas: 
+    "main main header"
+    "main main image-gallery"
+    "nom yum image-gallery"
+    "footer footer image-gallery";
+    ;
+    height: 100%;
+}
+.main-1{
+    grid-area: main;
+    background: lightpink;
+}
+.nom-1{
+    grid-area: nom;
+    background: lightcyan;
+}
+.yum-1{
+    grid-area: yum;
+    background: lightgreen;
+}
+.footer-1{
+    background: lightgray;
+    grid-area: footer;
+}
+.header-1{
+    background: lightblue;
+    grid-area: header;
+}
+.image-gallery-1{
+    background: lightcoral;
+    grid-area: image-gallery;
 }

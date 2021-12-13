@@ -80,11 +80,12 @@ We have created grid template. Now what about positioning the element inside gri
       grid-row: <start-line>(grid-row-start) / <end-line>(grid-row-end) OR <start-line> / span <value>;
     }
     ```
-    For more see Grid > Basic Properties > [Example 2a & 2b](For more see Grid > Basic Properties > [Example 1](https://github.com/utsavpatel51/CSS-Learning-Track/tree/main/Grid/Basic%20Properties)).
+    For more see Grid > Basic Properties > [Example 2a & 2b](https://github.com/utsavpatel51/CSS-Learning-Track/tree/main/Grid/Basic%20Properties).
+- To see use-case difference between grid-template-area and grid-column/grid-row see Grid > Basic Properties > [Example 3a & 3b](https://github.com/utsavpatel51/CSS-Learning-Track/tree/main/Grid/Basic%20Properties).
 
 `8. grid-auto-rows & grid-auto-columns`:
 
-- If a grid item is positioned into a row that is not explicitly sized by grid-template-rows, implicit grid tracks are created to hold it and to specify the size for that implicit grid use this both properties.
+- If a grid item is positioned into a row that is not explicitly sized by grid-template-rows, implicit grid tracks are created to hold it and to specify the size for that implicit grid use this both properties.
 - For more understanding see [this](https://css-tricks.com/snippets/css/complete-guide-grid/#prop-grid-column-row).
 
 ### Resources
