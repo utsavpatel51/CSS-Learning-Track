@@ -28,7 +28,7 @@ While Grid can be used as "two dimensional". we can declare the sizing of rows a
 
 We have created grid template. Now what about positioning the element inside grid?
 
-`3. grid-template-areas`:
+`3. grid-template-areas`
 
 - Define the grid templated by using the name of the grid provided to individual grid-item using `grid-area: header1`.
 
@@ -83,7 +83,7 @@ We have created grid template. Now what about positioning the element inside gri
     For more see Grid > Basic Properties > [Example 2a & 2b](https://github.com/utsavpatel51/CSS-Learning-Track/tree/main/Grid/Basic%20Properties).
 - To see use-case difference between grid-template-area and grid-column/grid-row see Grid > Basic Properties > [Example 3a & 3b](https://github.com/utsavpatel51/CSS-Learning-Track/tree/main/Grid/Basic%20Properties).
 
-`8. grid-auto-rows & grid-auto-columns`:
+`8. grid-auto-rows & grid-auto-columns`
 
 - If a grid item is positioned into a row that is not explicitly sized by grid-template-rows, implicit grid tracks are created to hold it and to specify the size for that implicit grid use this both properties.
 - For more understanding see [this](https://css-tricks.com/snippets/css/complete-guide-grid/#prop-grid-column-row).
