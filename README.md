@@ -11,9 +11,9 @@ FlexBox was designed as a one-dimensional layout model means flexbox deals with 
 `2. flex-direction`
 - When we're working with flex, there is two axis. main-axis and cross-axis which is perpendicular to main-axis.
 - Now we can define main-axis via flex-direction property.
-- flex-direction: row | row-reverse | column | column-reverse;
-- In row or row-reverse, your main axis will run along the row in the inline direction. In column or column-reverse, your main axis will run from the top of the page to the bottom — in the block direction. And Cross-axis will be always perpendicular to main axis
-- For more understanding see [this](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Basic_Concepts_of_Flexbox#the_main_axis)
+- `flex-direction: row | row-reverse | column | column-reverse;`
+- In row or row-reverse, your main axis will run along the row in the inline direction. In column or column-reverse, your main axis will run from the top of the page to the bottom — in the block direction. And Cross-axis will be always perpendicular to main axis.
+- For more understanding see [this](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Basic_Concepts_of_Flexbox#the_main_axis).
 
 `3. justify-content & align-items`
 - Justify content define alignment of flex items along the main-axis while align-items define alignment of flex-items along the cross-axis.
@@ -26,13 +26,13 @@ FlexBox was designed as a one-dimensional layout model means flexbox deals with 
 
 `6. flex-grow`
 - This property specifies how much of the remaining space in the flex container should be assigned to the item (the flex grow factor).
-- If all sibling items have the same flex grow factor, then all items will receive the same share of remaining space, otherwise it is distributed according to the ratio defined by the different flex grow factors
-- For Example see [this](https://developer.mozilla.org/en-US/docs/Web/CSS/flex-grow#setting_flex_item_grow_factor)
+- If all sibling items have the same flex grow factor, then all items will receive the same share of remaining space, otherwise it is distributed according to the ratio defined by the different flex grow factors.
+- For Example see [this](https://developer.mozilla.org/en-US/docs/Web/CSS/flex-grow#setting_flex_item_grow_factor).
 
 `7. flex-shrink`
 - This property specifies how much the item will shrink relative to the rest of the flexible items inside the flex container.
--  If the size of all flex items is larger than the flex container, items shrink to fit according to flex-shrink
-- For Example see FlexBox > Basic Properties > [Example 2](https://github.com/utsavpatel51/CSS-Learning-Track/tree/main/FlexBox/Basic%20Properties). More understanding [here](https://developer.mozilla.org/en-US/docs/Web/CSS/flex-shrink#setting_flex_item_shrink_factor)
+-  If the size of all flex items is larger than the flex container, items shrink to fit according to flex-shrink.
+- For Example see FlexBox > Basic Properties > [Example 2](https://github.com/utsavpatel51/CSS-Learning-Track/tree/main/FlexBox/Basic%20Properties). More understanding [here](https://developer.mozilla.org/en-US/docs/Web/CSS/flex-shrink#setting_flex_item_shrink_factor).
 
 `8. flex-basis`
 - This property specifies the initial/default length of a flexible item.
@@ -58,7 +58,7 @@ While Grid can be used as "two dimensional". we can declare the sizing of rows a
 
 `2. grid-template-columns & grid-template-rows`
 
-- Defines the columns and rows of the grid with a space-separated list of values. Value can be length, percentage, or fr (fraction of the free space in grid)
+- Defines the columns and rows of the grid with a space-separated list of values. Value can be length, percentage, or fr (fraction of the free space in grid).
 - This will create grid with 4 columns and 3 rows.
     ```css
     grid-template-columns: 1fr 1fr 1fr 1fr;
