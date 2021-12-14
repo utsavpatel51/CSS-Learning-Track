@@ -1,0 +1,61 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+}
+
+/* Example 1 */
+.container{
+    height: 30%;
+    display: flex;
+    flex-direction: row;
+    background: lightgray;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+.box{
+    height: 10rem;
+    width: 10rem;
+}
+.box1{
+    background: lightblue;
+    order: 3;
+}
+.box2{
+    background: lightcoral;
+    order: 1;
+}
+.box3{
+    background: lightgreen;
+    order: 2;
+}
+
+
+/* Example 2 */
+.container-1{
+    /* height: 80%; */
+    display: flex;
+    flex-direction: row;
+    background: lightslategrey;
+}
+.item{
+    height: 5rem;
+    width: 5rem;
+}
+.item1, .item4{
+    background: red;
+    flex-grow: 2;
+}
+.item2, .item5{
+    background: lightcoral;
+    flex-grow: 1;
+}
+.item3, .item6{
+    background: lightgreen;
+    flex-grow: 1;
+}

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic Flexbox</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h3>Example 1 (Basic Flexbox properties)</h3>
+    <div class="container">
+        <div class="box1 box">
+            Box1
+        </div>
+        <div class="box2 box">
+            Box2
+        </div>
+        <div class="box3 box">
+            Box3
+        </div>
+    </div>
+    <br><br>
+    <h3>Example 2 (flex-grow)</h3>
+    <p>
+        Total width is 1536px available. on screen. We're adding 6 item each having 5rem(5*16px=80px) width. Which means 
+        without any flex-grow all item will take 480px. So container have 1056px(1536px-480px) free up space. we have set item1 
+        and item 4 grow-factor as 2 and other have grow-factor of 1 means total we have 8 grow-factor, means 132px(1056px/8)
+        more will be added to base width of grow-factor 1 items. for grow-factor 2 it would be 264px more(132px*2). so now item1
+        and item 4 width will be 344px(264px+80px), all other item width will be 212px(132px+80px).
+    </p>
+    <div class="container-1">
+        <div class="item1 item"></div>
+        <div class="item2 item"></div>
+        <div class="item3 item"></div>
+        <div class="item4 item"></div>
+        <div class="item5 item"></div>
+        <div class="item6 item"></div>
+</body>
+</html>

@@ -1,6 +1,49 @@
 # CSS-Learning-Track
 Collections of notes/resources/examples for my learning on CSS
 
+## FlexBox
+### Notes
+FlexBox was designed as a one-dimensional layout model means flexbox deals with the layout in one direction at a time either as a row only or as a column only.
+
+`1. display: flex;`
+- To define element as a flex container. It enables a flex context for all its direct children.
+
+`2. flex-direction`
+- When we're working with flex, there is two axis. main-axis and cross-axis which is perpendicular to main-axis.
+- Now we can define main-axis via flex-direction property.
+- flex-direction: row | row-reverse | column | column-reverse;
+- In row or row-reverse, your main axis will run along the row in the inline direction. In column or column-reverse, your main axis will run from the top of the page to the bottom — in the block direction. And Cross-axis will be always perpendicular to main axis
+- For more understanding see [this](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Basic_Concepts_of_Flexbox#the_main_axis)
+
+`3. justify-content & align-items`
+- Justify content define alignment of flex items along the main-axis while align-items define alignment of flex-items along the cross-axis.
+
+`4. flex-wrap`
+- By default, flex items will all try to fit onto one line. You can change that and allow the items to wrap as needed with this property.
+
+`5. order`
+- This property will be used on flex-item to controls the order in which they appear in the flex container.
+
+`6. flex-grow`
+- This property specifies how much of the remaining space in the flex container should be assigned to the item (the flex grow factor).
+- If all sibling items have the same flex grow factor, then all items will receive the same share of remaining space, otherwise it is distributed according to the ratio defined by the different flex grow factors
+- For Example see [this](https://developer.mozilla.org/en-US/docs/Web/CSS/flex-grow#setting_flex_item_grow_factor)
+
+`7. flex-shrink`
+- This property specifies how much the item will shrink relative to the rest of the flexible items inside the flex container.
+-  If the size of all flex items is larger than the flex container, items shrink to fit according to flex-shrink
+- For Example see FlexBox > Basic Properties > [Example 2](https://github.com/utsavpatel51/CSS-Learning-Track/tree/main/FlexBox/Basic%20Properties). More understanding [here](https://developer.mozilla.org/en-US/docs/Web/CSS/flex-shrink#setting_flex_item_shrink_factor)
+
+`8. flex-basis`
+- This property specifies the initial/default length of a flexible item.
+- when the flex-basis of the first item is 200px, it will start out at 200px but then shrink to fit the space available with the other items being at least min-content sized.
+- `flex` is shorthand for 'flex-grow, flex-shrink, flex-basis'.
+
+### Resources
+- https://css-tricks.com/snippets/css/a-guide-to-flexbox/
+- https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout
+- https://css-tricks.com/understanding-flex-grow-flex-shrink-and-flex-basis/
+
 
 ## Grid
 ### Notes
@@ -92,3 +135,4 @@ We have created grid template. Now what about positioning the element inside gri
 - https://css-tricks.com/snippets/css/complete-guide-grid/
 - https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout
 - https://css-tricks.com/quick-whats-the-difference-between-flexbox-and-grid/
+- https://www.youtube.com/watch?v=705XCEruZFs
