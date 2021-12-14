@@ -35,26 +35,26 @@ We have created grid template. Now what about positioning the element inside gri
 - This will create a grid that’s four columns wide by three rows tall. Entire top bar would be cover by header. In the middle two column will be cover by main, one will remain empty and last will be cover by sidebar. Last row is all footer same as header.
     ```css
     .item-a {
-    grid-area: header;
+        grid-area: header;
     }
     .item-b {
-    grid-area: main;
+        grid-area: main;
     }
     .item-c {
-    grid-area: sidebar;
+        grid-area: sidebar;
     }
     .item-d {
-    grid-area: footer;
+        grid-area: footer;
     }
 
     .container {
-    display: grid;
-    grid-template-columns: 50px 50px 50px 50px;
-    grid-template-rows: auto;
-    grid-template-areas: 
-        "header header header header"
-        "main main . sidebar"
-        "footer footer footer footer";
+        display: grid;
+        grid-template-columns: 50px 50px 50px 50px;
+        grid-template-rows: auto;
+        grid-template-areas: 
+            "header header header header"
+            "main main . sidebar"
+            "footer footer footer footer";
     }
     ```
 
