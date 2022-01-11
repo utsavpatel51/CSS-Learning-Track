@@ -1,0 +1,89 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+}
+.clear{
+    clear: both;
+}
+
+h1{
+    font-size: 2.7rem;
+}
+h2{
+    font-size: 3.4rem;
+}
+
+/* Navbar section */
+nav{
+    background: rgb(0, 31, 78);
+    color: white;
+    padding: 1.4rem;
+}
+nav h1{
+    float: left;
+}
+nav ul{
+    float: right;
+}
+nav a{
+    text-decoration: none;
+    color: white;
+    font-size: 1.9rem;
+}
+nav li{
+    display: inline-block;
+    margin: 0 2rem;
+}
+
+/* Mid Section */
+.main-section{
+    background-image: url('main_img.jpg');
+    background-position: center;
+    height: 60rem;
+    text-align: center;
+    padding-top: 20rem;
+}
+.main-section h2, h3{
+    color: black;
+    text-shadow: 1px 1px 3px black;
+}
+.main-section h2{
+    font-size: 3.5rem;
+}
+.main-section h3{
+    margin: 2rem;
+    font-size: 2.5rem;
+}
+.main-section button{
+    padding: 0.8rem 2.9rem;
+    border: none;
+    background: rgb(69, 116, 187);
+    color: white;
+    cursor: pointer;
+}
+
+/* Contact Section */
+.form-section{
+    text-align: center;
+    margin: 5rem 0;
+}
+
+form label, form input, form textarea{
+    display: block;
+    margin: 0.8rem auto;
+    font-size: 1.7rem;
+    width: 30%;
+}
+
+form button{
+    margin-bottom: 2rem;
+    padding: 0.8rem 2.9rem;
+    border: none;
+    background: rgb(69, 116, 187);
+    color: white;
+    cursor: pointer;
+}
