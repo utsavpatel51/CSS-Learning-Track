@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta name="description" content="Professional Photography" />
+		<meta name="author" content="Light" />
+		<meta name="robots" content="index, follow" />
+		<title>Photography</title>
+		<!-- CSS -->
+		<link rel="stylesheet" href="style.css" />
+		<!-- Fonts -->
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre&family=Great+Vibes&display=swap"
+			rel="stylesheet"
+		/>
+		<!-- Font Awesome -->
+		<script
+			src="https://kit.fontawesome.com/ab04cc2b0d.js"
+			crossorigin="anonymous"
+		></script>
+	</head>
+	<body>
+		<header class="header-section">
+			<nav>
+				<h1 id="logo">Light Yagami</h1>
+				<!-- <input type="checkbox" class="burger-check" /> -->
+				<ul class="nav-links">
+					<li><a href="#about">About</a></li>
+					<li><a href="#work">Work</a></li>
+					<li><a href="#contact">Contact</a></li>
+				</ul>
+				<div class="burger">
+					<span class="line1"></span>
+					<span class="line2"></span>
+					<span class="line3"></span>
+				</div>
+			</nav>
+		</header>
+		<main>
+			<section class="hero-section">
+				<section class="hero-content">
+					<h2>
+						Light Yagami<br />
+						Photography
+					</h2>
+					<p>
+						Lorem ipsum dolor, sit amet consectetur adipisicing
+						elit. Eum saepe provident omnis aperiam
+					</p>
+					<button><a href="#work">Gallery</a></button>
+				</section>
+				<section class="hero-gallery">
+					<img
+						class="elena-image"
+						src="img/elena-joy.png"
+						alt="Hero image"
+					/>
+					<img
+						class="plant1 plants"
+						src="img/plant1.png"
+						alt="Plant image"
+					/>
+					<img
+						class="plant2 plants"
+						src="img/plant2.png"
+						alt="Plant image"
+					/>
+				</section>
+			</section>
+			<section id="about" class="about-section">
+				<section class="about-gallery">
+					<h2>MINIMAL</h2>
+					<img src="img/about-image.png" alt="About image" />
+				</section>
+				<section class="about-content">
+					<h2>Chole Gill</h2>
+					<h4>My Life</h4>
+					<p>
+						Lorem ipsum dolor sit amet consectetur adipisicing elit.
+						Voluptatum distinctio ducimus temporibus inventore
+						libero maiores laborum <br>earum error id dolorum rerum
+						sequi eos suscipit iusto, molestiae a officia, velit
+						accusamus!
+					</p>
+					<h4>Let's Work</h4>
+					<p>
+						Lorem ipsum dolor sit amet consectetur adipisicing elit.
+						Voluptatum distinctio ducimus temporibus inventore
+						libero maiores laborum earum<br>error id dolorum rerum
+						sequi eos suscipit iusto, molestiae a officia, velit
+						accusamus!
+					</p>
+				</section>
+			</section>
+			<div id="work" class="gallery-section">
+				<header>
+					<h3>Quality Photography</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis, natus.</p>
+				</header>
+				<img class="gallery1" src="img/gallery-1.jpg" alt="Gallery 1">
+				<img class="gallery2" src="img/gallery-2.jpg" alt="Gallery 2">
+				<img class="gallery3" src="img/gallery-3.jpg" alt="Gallery 3">
+				<img class="gallery4" src="img/gallery-4.jpg" alt="Gallery 4">
+			</div>
+			<div id="contact" class="contact-section">
+				<div class="contact-form">
+					<h3>
+						<span>Get in</span>
+						<br>
+						<span>touch.</span>
+					</h3>
+					<label for="email">Your Email</label>
+					<input type="email" id="email"/>
+					<button type="submit">Submit</button>
+				</div>
+				<div class="contact-image">
+					<img class="contact-img" src="img/contact-image.jpg" alt="Contact me">
+				</div>
+			</div>
+			<footer>
+				<p>Light Yagami &copy; 2022</p>
+				<ul>
+                    <li><a title="Instagram" href="#"><i class="fab fa-instagram"></i></a></li>
+                    <li><a title="Twitter" href="#"><i class="fab fa-twitter"></i></a></li>
+                    <li><a title="Youtube" href="#"><i class="fab fa-youtube"></i></a></li>
+                </ul>
+			</footer>
+		</main>
+		<script>
+			const nav = document.querySelector(".nav-links");
+			const burger = document.querySelector(".burger");
+			const links = document.querySelectorAll("a");
+
+			burger.addEventListener("click", ()=>{
+				nav.classList.toggle("nav-open");
+				burger.classList.toggle("toggle");
+			});
+			links.forEach(link => {
+				link.addEventListener("click", ()=>{
+					nav.classList.toggle("nav-open");
+					burger.classList.toggle("toggle")
+				})
+			});
+		</script>
+	</body>
+</html>
