@@ -1,0 +1,340 @@
+/* This File contain constant like variables, mixin for scss */
+/* This File contain global uses styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Frank Ruhl Libre", serif;
+  font-weight: 100;
+}
+
+h1 {
+  font-size: 3.8rem;
+}
+
+h2 {
+  font-size: 2.8rem;
+}
+
+h3 {
+  font-size: 3rem;
+}
+
+h4, h5 {
+  font-size: 2rem;
+}
+
+p {
+  font-size: 2.1rem;
+}
+
+a {
+  font-size: 2.1rem;
+  text-decoration: none;
+}
+a:active {
+  color: black;
+}
+
+/* This File contain style for header section */
+nav {
+  min-height: 10vh;
+  width: 50%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: wrap;
+}
+nav #logo {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex: 1 1 10rem;
+  margin-left: 1rem;
+}
+nav #logo h1 {
+  font-family: "Great Vibes", cursive;
+  font-weight: 100;
+  margin: 1%;
+  text-align: center;
+}
+nav ul {
+  list-style-type: none;
+  flex: 1 1 30rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+nav ul li {
+  margin-right: 0.2rem;
+}
+nav ul .active-nav-link {
+  border-radius: 1.5rem;
+  outline: none;
+  padding: 1rem 4rem;
+  background-color: #333;
+  color: white;
+}
+
+/* This File contain style for homepage section */
+.intro-section {
+  min-height: 90vh;
+  width: 90%;
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.intro-details {
+  flex: 1 1 40rem;
+}
+.intro-details h1 {
+  display: inline-block;
+  font-size: 5rem;
+  padding-top: 0.5rem;
+  font-weight: bold;
+  background: linear-gradient(to right, #38D39F, #38A4D3);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.intro-details h3 {
+  font-size: 3.5rem;
+  padding-top: 0.5rem;
+  font-weight: bolder;
+}
+.intro-details p {
+  font-size: 2.2rem;
+  text-align: justify;
+  padding-top: 0.5rem;
+}
+.intro-details .intro-social a {
+  display: inline-block;
+  padding: 2rem 1rem 0.5rem 0rem;
+}
+
+.intro-images {
+  flex: 1 1 50rem;
+}
+.intro-images .main-image {
+  width: 100%;
+}
+.intro-images .splash-image {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: -1;
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 110vh;
+}
+
+/* This File contain style for Projects page */
+.projects-section {
+  min-height: 90vh;
+  width: 90%;
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.projects-section .travelly, .projects-section .photography {
+  flex: 1 1 40rem;
+  margin: 0 2rem;
+}
+.projects-section img {
+  height: 100%;
+  width: 100%;
+}
+.projects-section h2 {
+  text-align: center;
+  padding: 1.5rem 0;
+  background: linear-gradient(to right, #38D39F, #38A4D3);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* This File contain style for contact section */
+.contact-section {
+  min-height: 80vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.contact-section form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  padding: 10rem;
+  border-radius: 2rem;
+}
+.contact-section form label {
+  background: linear-gradient(to right, #38D39F, #38A4D3);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 2.1rem;
+  margin: 0.2rem 0;
+}
+.contact-section form input, .contact-section form textarea {
+  border-radius: 0.2rem;
+  padding: 0.4rem 0.3rem;
+}
+.contact-section form input {
+  transition: all 0.8s ease-in;
+}
+.contact-section form input:focus {
+  outline: none;
+  padding-right: 8rem;
+}
+.contact-section form textarea {
+  resize: vertical;
+  transition: all 0.3s ease-in;
+}
+.contact-section form textarea:focus {
+  outline: none;
+  padding-right: 1rem;
+}
+.contact-section form button {
+  color: white;
+  background-color: #333;
+  margin: 2rem 0;
+  padding: 1rem 3rem;
+  border-radius: 0.2rem;
+  outline: none;
+  border: none;
+  font-size: 1.3rem;
+  font-weight: 500;
+  text-align: center;
+  transition: all 0.8s ease-in;
+}
+.contact-section form button:hover, .contact-section form button:focus {
+  padding: 1rem 4rem;
+}
+
+/* This File contain style for footer section */
+footer {
+  min-height: 10vh;
+  width: 50%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: wrap;
+}
+footer p {
+  flex: 1 1 10rem;
+  font-weight: 100;
+  margin-left: 1rem;
+}
+footer ul {
+  flex: 1 1 30rem;
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+footer .fab {
+  transition: 0.5s;
+  color: #333;
+}
+footer .fa-instagram:hover {
+  color: #e1306c;
+  font-size: 3rem;
+  transform: rotate(360deg);
+}
+footer .fa-twitter:hover {
+  color: #405de6;
+  font-size: 3rem;
+  transform: rotate(360deg);
+}
+footer .fa-youtube:hover {
+  color: red;
+  font-size: 3rem;
+  transform: rotate(360deg);
+}
+
+/* main  */
+@media screen and (max-width: 1255px) {
+  body {
+    font-size: 50%;
+  }
+
+  nav {
+    width: 90%;
+    margin: auto;
+  }
+
+  .main-image {
+    width: 90%;
+  }
+
+  .splash-image {
+    display: none;
+  }
+
+  .intro-details {
+    text-align: center;
+  }
+
+  footer {
+    width: 90%;
+    margin: auto;
+  }
+  footer p {
+    text-align: center;
+  }
+}
+@media screen and (max-width: 483px) {
+  body {
+    font-size: 40%;
+  }
+
+  #logo {
+    justify-content: center;
+  }
+  #logo img {
+    width: 4rem;
+  }
+
+  .intro-details {
+    text-align: center;
+  }
+
+  .travelly, .photography {
+    flex: 1 1 50rem;
+    margin: 0;
+  }
+
+  nav ul .active-nav-link {
+    padding: 0.5rem 3rem;
+  }
+
+  .contact-section form {
+    padding: 8rem;
+  }
+
+  footer p {
+    flex-basis: 20rem;
+  }
+  footer ul {
+    flex-basis: 40rem;
+  }
+}

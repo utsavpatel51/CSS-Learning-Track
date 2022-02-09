@@ -1,0 +1,35 @@
+/* This File contain style for header section */
+
+@use 'const';
+nav{
+    min-height: 10vh;
+    width: 50%;
+    @include const.flex($direction: row, $align: center);
+    flex-wrap: wrap;
+    #logo{
+        @include const.flex($direction: row, $align: center);
+        flex: 1 1 10rem;
+        margin-left: 1rem;
+        h1{
+            font-family: const.$font-stack-great;
+            font-weight: 100;
+            margin: 1%;
+            text-align: center;
+        }
+    }
+    ul{
+        list-style-type: none;
+        flex: 1 1 30rem;
+        @include const.flex($direction: row, $justify: space-around, $align: center);
+        li{
+            margin-right: 0.2rem;
+        }
+        .active-nav-link{
+            border-radius: 1.5rem;
+            outline: none;
+            padding: 1rem 4rem;
+            background-color: const.$gray-text;
+            color: white;
+        }
+    }
+}

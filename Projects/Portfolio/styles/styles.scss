@@ -1,0 +1,73 @@
+/* main  */
+@use 'modules/global';
+@use 'modules/header';
+@use 'modules/home';
+@use 'modules/projects';
+@use 'modules/contacts';
+@use 'modules/footer';
+
+// Media Queries
+@media screen and (max-width: 1255px){
+    body{
+        font-size: 50%;
+    }
+    nav{
+        width: 90%;
+        margin: auto;
+    }
+    .main-image{
+        width: 90%;
+    }
+    .splash-image{
+        display: none;
+    }
+    .intro-details{
+        text-align: center;
+    }
+    footer{
+        width: 90%;
+        margin: auto;
+        p{
+            text-align: center;
+        }
+    }
+}
+
+@media screen and (max-width: 483px) {
+    body{
+        font-size: 40%;
+    }
+    #logo{
+        justify-content: center;
+        img{
+            width: 4rem;
+        }
+    }
+    .intro-details{
+        text-align: center;
+    }
+    .travelly, .photography{
+        flex: 1 1 50rem;
+        margin: 0;
+    }
+    nav{
+        ul{
+            .active-nav-link{
+                padding: 0.5rem 3rem;
+            }
+        }
+    }
+    .contact-section{
+        form{
+            padding: 8rem;
+        }
+    }
+    footer{
+        p{
+            flex-basis: 20rem;
+        }
+        ul{
+            flex-basis: 40rem;
+        }
+    }
+}

@@ -1,0 +1,39 @@
+/* This File contain global uses styles */
+@use 'const';
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+}
+body{
+    font-family: const.$font-stack-frank;
+    font-weight: 100;
+}
+
+
+h1{
+    font-size: const.$header1;
+}
+h2{
+    font-size: const.$header2;
+}
+h3{
+    font-size: const.$header3;
+}
+h4, h5{
+    font-size: const.$header4;
+}
+p{
+    font-size: const.$text;
+}
+a{
+    font-size: const.$text;
+    text-decoration: none;
+    &:active{
+        color: black;
+    }
+}

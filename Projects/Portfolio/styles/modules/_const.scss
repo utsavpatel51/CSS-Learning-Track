@@ -1,0 +1,38 @@
+/* This File contain constant like variables, mixin for scss */
+
+// Variables:
+
+    // Font-size
+$header1: 3.8rem;
+$header2: 2.8rem;
+$header3: 3rem;
+$header4: 2rem;
+$text: 2.1rem;
+$small-text: 1rem;
+
+
+    // Fonts
+$font-stack-frank: 'Frank Ruhl Libre', serif;
+$font-stack-great: 'Great Vibes', cursive;
+
+    // Colors
+$gray-text: #333;
+$primary-color: #38D39F;
+$secondary-color: #38A4D3;
+
+// Mixins:
+@mixin flex($direction, $justify: null, $align: null) {
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $justify;
+    align-items: $align;
+}
+@mixin linear-gradient($color1: $primary-color, $color2: $secondary-color, $text: true) {
+    background: linear-gradient(to right, $color1, $color2);
+    @if $text {
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+    
+}

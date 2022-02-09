@@ -1,0 +1,25 @@
+/* This File contain style for Projects page */
+
+@use 'const';
+
+.projects-section{
+    min-height: 90vh;
+    width: 90%;
+    margin: auto;
+    @include const.flex($direction: row, $justify: space-around, $align: center);
+    flex-wrap: wrap;
+    
+    .travelly, .photography{
+        flex: 1 1 40rem;
+        margin: 0 2rem;
+    }
+    img{
+        height: 100%;
+        width: 100%;
+    }
+    h2{
+        text-align: center;
+        padding: 1.5rem 0;
+        @include const.linear-gradient();
+    }
+}

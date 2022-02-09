@@ -1,0 +1,38 @@
+/* This File contain style for footer section */
+
+@use 'const';
+footer{
+    min-height: 10vh;
+    width: 50%;
+    @include const.flex($direction: row, $align: center);
+    flex-wrap: wrap;
+    p{
+        flex: 1 1 10rem;
+        font-weight: 100;
+        margin-left: 1rem;
+    }
+    ul{
+        flex: 1 1 30rem;
+        list-style: none;
+        @include const.flex($direction: row, $justify: space-around, $align: center);
+    }
+    .fab{
+        transition: 0.5s;
+        color: const.$gray-text;
+    }
+    .fa-instagram:hover{
+        color: #e1306c;
+        font-size: 3rem;
+        transform: rotate(360deg);
+    }
+    .fa-twitter:hover{
+        color: #405de6;
+        font-size: 3rem;
+        transform: rotate(360deg);
+    }
+    .fa-youtube:hover{
+        color: red;
+        font-size: 3rem;
+        transform: rotate(360deg);
+    }
+}
